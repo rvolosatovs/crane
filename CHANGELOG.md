@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+### Added
+
+* Support for building `rlib`, `dylib` and plain `lib` crates
+
+### Fixed
+
+* **Breaking** When `bindeps` feature is used, the binaries built as dependencies 
+  will not be installed by default anymore
+
 ### [0.12.1] - 2023-04-10
 
 ### Changed

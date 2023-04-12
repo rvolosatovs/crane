@@ -247,8 +247,12 @@ in
   manyLibsInstalledAsExpected = pkgs.runCommand "manyLibsInstalledAsExpected" { } ''
     cat >expected <<EOF
     liball_types.a
+    liball_types.rlib
     liball_types.so
     libonly_cdylib.so
+    libonly_dylib.so
+    libonly_lib.rlib
+    libonly_rlib.rlib
     libonly_staticlib.a
     EOF
 
